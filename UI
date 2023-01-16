@@ -1,0 +1,31 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class MainMenu : MonoBehaviour
+{
+    public Button playButton;
+    public Button settingsButton;
+    public Button quitButton;
+
+    void Start()
+    {
+        playButton.onClick.AddListener(StartGame);
+        settingsButton.onClick.AddListener(OpenSettings);
+        quitButton.onClick.AddListener(QuitGame);
+    }
+
+    void StartGame()
+    {
+        // Code to start the game
+    }
+
+    void OpenSettings()
+    {
+        // Code to open the settings menu
+    }
+
+    void QuitGame()
+    {
+        // Code to quit the game
+    }
+}
